@@ -1,11 +1,11 @@
 const buildConfig = () => {
   const blogId = process.env.NEXT_PUBLIC_BLOG_ID;
   if (!blogId) throw new Error("NEXT_PUBLIC_BLOG_ID is missing");
-  const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "ftcc.au";
+  const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "ftcc.org.au";
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Filipino Tech Community Canberra";
   const defaultTitle =
     process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "FTCC";
-  const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Community news blog.";
+  const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Canberra Filipinos in tech.";
 
   return {
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
